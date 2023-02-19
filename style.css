@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Playfair Display', serif;    
+    font-size: x-large;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(design.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    /* color:black;
+    z-index: 999; */
+}
+
+nav img{
+    width: 150px;
+}
+
+
+/* .nav .sticky{    
+    padding: 15px 0;
+    background: #016f86;
+} */
+
+.nav-links{
+    flex: 1;
+    right:100px;
+    position: fixed;
+    z-index: 3;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    font-family:  'Poppins', sans-serif;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+    
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    color: white;
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 90px;
+    margin-bottom: -40px;
+    font-family:  'Poppins', sans-serif;
+}
+
+.text-box h3{
+    font-size: 50px;
+    line-height: 160px;
+    margin-left: 90px;
+    margin-bottom:  -40px;
+    font-family:  'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(back1.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back1 20s linear infinite;
+    
+}
+
+@keyframes back1{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h6{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 90px;
+    font-family:  'Poppins', sans-serif;
+}
+
+.text-box .row{
+    display: flow-root;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 90px;
+}
+
+.text-box a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+    
+}
+
+
+
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons img{
+    width: 25px;
+    display: block;
+    margin: 35px 5px;
+    margin-bottom: -5px;
+}
+
+/*-----course------*/
+
+
+.course{
+    height: 100vh;
+    width: 100%;
+    background-image: url(lg2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.course{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+
+.course h1{
+    color:lightgray;
+    font-size: 36px;
+    font-weight: 600;
+    font-family:  'Poppins', sans-serif;
+    margin-left: 0%;
+    text-align: center;
+
+
+}
+
+
+.course p{
+    text-align: left;
+    color: lightgray;
+    font-size: 17px;
+    font-weight: 10%;
+    line-height: 70px;
+    font-family:  'Poppins', sans-serif;
+    width:60%;
+}
+
+.course1{
+    height:100vh;
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    background-image: linear-gradient(to bottom, #110f10, #1a181a, #222023, #2a282d, #323137, #37393f, #3d4247, #434a4f, #4a5356, #525b5e, #5b6465, #646d6c);
+
+}
+
+.course1 h1{
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: 600;
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.container h2{
+   font-weight: 400;
+   letter-spacing: 1px;
+   margin-top: 40px;
+   margin-bottom: 5px;
+   color:black;
+   font-size: 15px;
+   font-family:  'Poppins', sans-serif;
+   text-align: center;
+
+}
+
+.skills{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px ;
+    margin-top: 150px;
+    padding-left: 50px;
+}
+.progress{
+    width: 600px;
+}
+
+.w3-progress-container{
+    width:50%;
+    height:1em;
+    position:relative;
+    
+}
+.w3-progressbar{
+    background-color: lightgrey;
+    height:100%;
+    position:absolute;
+}
+.w3-round-xlarge{
+    border-radius:16px;
+}
+.skills{
+    display:flex;
+    flex-direction:column;
+    row-gap: 50px;
+}
+.skillset{
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+
+.education{
+    background-image: linear-gradient(to left bottom, #464b4b, #404445, #3a3e40, #34373a, #2f3134, #2f3134, #2f3134, #2f3134, #34373a, #3a3e40, #404445, #464b4b);
+    padding-bottom: 300px;
+    height:100vh;
+    
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px white;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    line-height: 300px;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+.front{
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #ffffff;
+}
+.back {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transform: rotateY( 180deg );
+}
+.logo{
+    width:30px;
+}
+.icons{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.pawan,.desc{
+    display:inline-block;
+}
+.desc{
+    padding-top: 0;
+    margin-top: 0;
+    padding-left:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
